@@ -5,8 +5,8 @@ import { createTheme } from '@mui/material/styles';
 declare module '@mui/material/styles' {
   interface Mixins {
     pageLayout: {
-      boxShadow:string;
-      background:string;
+      boxShadow: string;
+      background: string;
     };
   }
 }
@@ -14,15 +14,14 @@ declare module '@mui/material/styles' {
 const theme = createTheme({
   typography: {
     fontFamily: 'var(--font-manrope), sans-serif',
-    h1: { fontFamily: 'var(--font-jost)',color: '#222' },
-    h2: { fontFamily: 'var(--font-jost)',color: '#222' },
+    h1: { fontFamily: 'jost',color: '#222' },
+    h2: { fontFamily: 'jost',color: '#222' },
     h3: { fontSize: '24px', color: '#222', fontWeight: '700' },
-
   },
   mixins: {
     pageLayout: {
       boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.08)',
-      background:'#fff',
+      background: '#fff',
     },
   },
   components: {
@@ -47,7 +46,7 @@ const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          color: '#222',            
+          color: '#222',
         },
       },
     },
@@ -153,6 +152,73 @@ const theme = createTheme({
             backgroundColor: 'rgba(68, 91, 156, 0.05)',
             borderColor: '#445B9C',
           },
+        },
+      },
+    },
+
+    // ✅ Newly Added Styles:
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#fff',
+          borderRadius: 0,
+          '& .MuiOutlinedInput-root': {
+            borderRadius: 0,
+            '& input': {
+              height: '48px',
+              boxSizing: 'border-box',
+            },
+            '& textarea': {
+              height: 'auto !important',
+            },
+          },
+        },
+      },
+    },
+    MuiSelect: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#fff',
+          borderRadius: 0,
+          height: '48px',
+          fontFamily:'jost',
+        },
+        select: {
+          height: '48px',
+          display: 'flex',
+          alignItems: 'center',
+          paddingTop: 0,
+          paddingBottom: 0,
+          fontFamily:'jost',
+        },
+        icon: {
+          top: 'calc(50% - 12px)',
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderRadius: 0,
+          backgroundColor: '#fff',
+          fontFamily:'jost',
+        },
+      },
+    },
+
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          fontSize: '14px',
+          fontWeight: 600,
+          fontFamily:'jost',
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          fontFamily:'jost',
         },
       },
     },
