@@ -102,14 +102,14 @@ export default function CustomerProfileForm() {
           gridTemplateColumns={{ xs: "1fr", md: "1fr 1fr" }}
         >
           <LabeledInput label="First Name">
-            <TextField defaultValue="Ashish" fullWidth size="small" />
+            <TextField defaultValue="Enter your Name" fullWidth size="small" />
           </LabeledInput>
           <LabeledInput label="Last Name">
-            <TextField defaultValue="Sharma" fullWidth size="small" />
+            <TextField defaultValue="Enter your Last Name" fullWidth size="small" />
           </LabeledInput>
           <LabeledInput label="Name of Entity">
             <TextField
-              defaultValue="Ashish Jewellery Pvt Ltd."
+              defaultValue="Name of Entity"
               fullWidth
               size="small"
             />
@@ -146,7 +146,7 @@ export default function CustomerProfileForm() {
                 <MenuItem value="+44">+44</MenuItem>
               </Select>
               <TextField
-                defaultValue="8201475558"
+                defaultValue="Enter Number"
                 fullWidth
                 size="small"
                 sx={{
@@ -161,7 +161,7 @@ export default function CustomerProfileForm() {
 
           <LabeledInput label="Email">
             <TextField
-              defaultValue="ashish.sharma10@gmail.com"
+              defaultValue="Enter Your Email"
               fullWidth
               size="small"
             />
@@ -175,11 +175,11 @@ export default function CustomerProfileForm() {
           gap={2}
           gridTemplateColumns={{ xs: "1fr", md: "1fr 1fr 1fr 1fr" }}
         >
-          <CustomSelect label="Country" value="India" />
-          <CustomSelect label="State" value="Rajasthan" />
-          <CustomSelect label="City" value="Jaipur" />
+          <CustomSelect label="Country" value="Country" />
+          <CustomSelect label="State" value="State" />
+          <CustomSelect label="City" value="City" />
           <LabeledInput label="Post Code">
-            <TextField defaultValue="302016" fullWidth size="small" />
+            <TextField defaultValue="Post Code" fullWidth size="small" />
           </LabeledInput>
         </Box>
 
@@ -191,10 +191,10 @@ export default function CustomerProfileForm() {
           gridTemplateColumns={{ xs: "1fr", md: "1fr 1fr 1fr" }}
         >
           <LabeledInput label="PAN No.">
-            <TextField defaultValue="APGPA411L" fullWidth size="small" />
+            <TextField defaultValue="PAN No." fullWidth size="small" />
           </LabeledInput>
           <LabeledInput label="GST No.">
-            <TextField defaultValue="28INRJI8516H9Z1" fullWidth size="small" />
+            <TextField defaultValue="GST No." fullWidth size="small" />
           </LabeledInput>
           <Box>
             <Typography
@@ -250,7 +250,7 @@ export default function CustomerProfileForm() {
               rows={2}
               fullWidth
               size="small"
-              defaultValue="S-4A, kabir marg, bani park."
+              defaultValue="Enter Your Adress"
             />
           </LabeledInput>
         </Box>
