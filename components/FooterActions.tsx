@@ -28,7 +28,6 @@ export default function FooterActions() {
     >
       <Box display="flex" gap={2} flexWrap="wrap">
         <FormControlLabel control={<Checkbox defaultChecked />} label="Is Active" />
-        <FormControlLabel control={<Checkbox defaultChecked />} label="Bestseller" />
       </Box>
       <Box display="flex" gap={2} mt={{ xs: 5, md: 0 }}>
         <Button variant="outlined">Cancel</Button>
