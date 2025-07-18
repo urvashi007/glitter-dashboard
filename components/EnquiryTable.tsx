@@ -61,7 +61,7 @@ const data: EnquiryData[] = [
 const EnquiryTable: React.FC = () => {
   const [openRow, setOpenRow] = useState<number | null>(null);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // true for screen < 600px
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleToggle = (index: number) => {
     setOpenRow((prev) => (prev === index ? null : index));

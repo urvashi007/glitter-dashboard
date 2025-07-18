@@ -120,6 +120,7 @@ export default function FormEditSection() {
 <TextField
   fullWidth
   placeholder="Copy Link Here"
+  
   InputProps={{
     endAdornment: (
       <InputAdornment position="end">
@@ -135,16 +136,18 @@ export default function FormEditSection() {
         <Paper
           sx={{
             mt: 1,
-            p: 1.5,
-            backgroundColor: '#e8ecf6',
+            padding: "0 10px",
+            backgroundColor: '#6179BC4D',
             display: 'flex',
+            boxShadow:'none',
             justifyContent: 'space-between',
             alignItems: 'center',
+            borderRadius:'0'
           }}
         >
-          <Typography variant="body2" sx={{ wordBreak: 'break-all' }}>{link}</Typography>
-          <IconButton onClick={handleCopyLink}>
-            <ContentCopyIcon fontSize="small" />
+          <Typography variant="body2" sx={{ wordBreak: 'break-all',color:"#222" }}>{link}</Typography>
+          <IconButton onClick={handleCopyLink} sx={{padding:'10px',color:"#222"}}>
+            <ContentCopyIcon  fontSize="small" />
           </IconButton>
         </Paper>
 

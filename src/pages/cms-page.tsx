@@ -11,6 +11,7 @@ import { Product, products } from '../../utils/products';
 
 
 import CmsForm from '../../components/CmsFrorm';
+import FooterActions from '../../components/FooterActions';
 
 export default function EditBanner() {
   const [] = useState<Product[]>(products);
@@ -36,7 +37,7 @@ export default function EditBanner() {
         </Box>
         <Box flexGrow={1} sx={{overflowX: 'auto', bgcolor: "#F1F3F8"}}>
         <CmsForm />
-          
+           <FooterActions showCheckbox={false} showCancel={false} />
         </Box>
       </Box>
     </Box>
